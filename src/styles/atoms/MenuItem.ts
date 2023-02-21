@@ -5,8 +5,14 @@ export const SWrapper = styled.div`
   font-size: 1.5rem;
   color: black;
   cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: .2rem;
   &:hover{
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.2);
     color: var(--main);
   }
 

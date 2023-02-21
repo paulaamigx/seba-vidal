@@ -2,10 +2,13 @@ import styled from 'styled-components'
 
 export const SWrapper = styled.div`
   display: flex;
-  gap: 2rem;
   padding: 0 3rem;
   align-items: center;
   height: 5rem;
+  position: absolute;
+  top: 0,
+  left: 0;
+  width: 100%;
 `
 
 export const SLogo = styled.p`
