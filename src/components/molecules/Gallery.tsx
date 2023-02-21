@@ -1,5 +1,5 @@
 import { ImageKeyboard, ImageKeyboardBody} from '@/assets'
-import { SImage, SSlide, SWrapper } from '@/styles/molecules/Gallery'
+import { SButton, SImage, SSlide, SWrapper } from '@/styles/molecules/Gallery'
 import { useRef } from 'react'
 import { useSnapScroll } from '@/hooks'
 
@@ -10,9 +10,15 @@ const Gallery = () => {
   return(
     <SWrapper ref={ref}>
       <SSlide>
+        <div>
+          Texto sebakan vidal ma lindo
+          <SButton>Hace algo!</SButton>
+        </div>
         <SImage alt='' src={ImageKeyboardBody}/>
       </SSlide>
       <SSlide>
+        <div>Te amo</div>
+        <div>Te amo</div>
         <SImage alt='' src={ImageKeyboard}/>
       </SSlide>
     </SWrapper>

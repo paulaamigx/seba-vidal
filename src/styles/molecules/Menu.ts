@@ -5,10 +5,11 @@ export const SWrapper = styled.div`
   padding: 0 3rem;
   align-items: center;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   top: 0,
   left: 0;
   width: 100%;
+  z-Index: 2;
 `
 
 export const SLogo = styled.p`
