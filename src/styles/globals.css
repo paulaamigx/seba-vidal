@@ -1,6 +1,10 @@
 :root{
-  --main: #34623F;
-  --secondary: #703D57;
+  --main: #92223Fff;
+  --darkSecondary: #222454ff;
+  --lightSecondary: #4EAFE7ff;
+  --secondary: #22297Fff;
+  --black: #000507ff;
+  --minWidth: 50rem;
 }
 * {
   box-sizing: border-box;
