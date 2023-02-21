@@ -1,0 +1,22 @@
+:root{
+  --main: #34623F;
+  --secondary: #703D57;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  div::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+html{
+  background-color: white;
+}
+body{
+  margin: auto;
+  overflow: scroll;
+}
