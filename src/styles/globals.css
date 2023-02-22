@@ -11,9 +11,12 @@
   padding: 0;
   margin: 0;
   font-size: 15px;
-  div::-webkit-scrollbar {
-    display: none;
-  }
+
+}
+div::-webkit-scrollbar {
+  display: none;
+}
+div{
   -ms-overflow-style: none;  
   scrollbar-width: none; 
 }

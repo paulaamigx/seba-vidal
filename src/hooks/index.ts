@@ -1,1 +1,1 @@
-export {default as useSnapScroll} from './useSnapScroll'
+export {default as useGalleryScroll} from './useGalleryScroll'

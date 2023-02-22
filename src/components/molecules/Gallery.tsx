@@ -2,28 +2,33 @@ import { SFontAwesomeIcon, SSlide, SSlidesContainer,
   SWrapper } from '@/styles/molecules/Gallery'
 import { Slide2,  SlideMain } from '@/components'
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { useGalleryScroll } from '@/hooks'
 import { useRef } from 'react'
-import { useSnapScroll } from '@/hooks'
 
+const Slides = [<SlideMain/>, <Slide2/>]
 const Gallery = () => {
   const ref = useRef<HTMLDivElement|null>(null)
-  useSnapScroll(ref)
+  useGalleryScroll(ref)
 
   const handleScroll = (dir: 'prev' | 'next') => {
     if(!ref.current) return
     const pos = ref.current.scrollLeft
     const width = ref.current.clientWidth
-
     ref.current?.scrollTo({
       left: dir === 'prev'? pos - width : pos + width ,
       behavior: 'smooth'
     })
   }
+
+
   return(
     <SWrapper >
       <SSlidesContainer ref={ref}>
-        <SSlide> <SlideMain/> </SSlide>
-        <SSlide> <Slide2/> </SSlide>
+        <SSlide> {Slides[Slides.length-1]} </SSlide>
+        {Slides.map(Slide =>
+          <SSlide> {Slide} </SSlide>
+        )}
+        <SSlide> {Slides[0]} </SSlide>
       </SSlidesContainer>
 
       <SFontAwesomeIcon
