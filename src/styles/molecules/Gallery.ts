@@ -4,6 +4,10 @@ import styled from 'styled-components'
 export const SWrapper = styled.div`
   position: relative;
   min-width: var(--minWidth);
+  >*{
+    overfloY: hidden;
+      overfloY: hidden;
+  }
 `
 
 export const SSlidesContainer= styled.div`

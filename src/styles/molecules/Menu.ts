@@ -5,13 +5,15 @@ export const SWrapper = styled.div`
   padding: 0 3rem;
   align-items: center;
   height: 5rem;
-  position: sticky;
+  position: fixed;
   top: 0,
+  right: 0;
   left: 0;
   width: 100%;
   z-Index: 2;
   min-width: var(--minWidth);
   margin-bottom: -5rem;
+  overflow-x: scroll;
 `
 
 export const SLogo = styled.p`

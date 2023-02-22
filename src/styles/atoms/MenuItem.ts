@@ -12,7 +12,6 @@ export const SWrapper = styled.div`
   padding: 0 1rem;
   border-radius: .2rem;
   &:hover{
-    background-color: rgba(255,255,255,.2);
     color: var(--main);
   }
 

@@ -15,6 +15,7 @@ export const SWrapper = styled.div`
   right: 3rem;
   align-items: center;
   padding: 1rem;
+  z-index: 100;
   svg{
     font-size: 1.5rem;
     cursor: pointer;
