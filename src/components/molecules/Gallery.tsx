@@ -2,8 +2,8 @@ import { SFontAwesomeIcon, SSlidesContainer,
   SWrapper } from '@/styles/molecules/Gallery'
 import { Slide, Slide2,  SlideMain } from '@/components'
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { useEffect, useRef } from 'react'
 import { useGalleryScroll } from '@/hooks'
-import { useRef } from 'react'
 
 const Slides = [<SlideMain/>, <Slide2/>]
 const Gallery = () => {
@@ -20,6 +20,10 @@ const Gallery = () => {
     })
   }
 
+  useEffect(() => {
+    if(!ref.current) return
+    ref.current.scrollTo(ref.current.clientWidth,0)
+  },[])
 
   return(
     <SWrapper id='home'>
