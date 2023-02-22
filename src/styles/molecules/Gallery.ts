@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const SWrapper = styled.div`
   position: relative;
+  min-width: var(--minWidth);
 `
 
 export const SSlidesContainer= styled.div`
@@ -11,6 +12,7 @@ export const SSlidesContainer= styled.div`
   position: relative;
   overflow: scroll;
   scroll-snap-type: x mandatory;
+  min-width: var(--minWidth);
   >*{
     scroll-snap-align: center;
   }
@@ -22,7 +24,7 @@ export const SSlide = styled.div`
   width: 100vw;
   min-width: var(--minWidth);
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: none;
   div{
     position: absolute;
   }
