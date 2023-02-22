@@ -1,4 +1,4 @@
-import { Dates, Gallery, LastRelease, Menu,
+import { Bio, Dates, Gallery, LastRelease, Menu,
   SocialMediaBubble } from '@/components'
 import { Roboto } from '@next/font/google'
 
@@ -15,6 +15,7 @@ export default function Home() {
       <Gallery/>
       <Dates/>
       <LastRelease/>
+      <Bio/>
     </main>
   )
 }
