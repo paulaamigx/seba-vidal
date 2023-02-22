@@ -5,15 +5,7 @@ export const SWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 10rem 0;
-  gap: 10rem;
+  padding: 7rem 0;
+  gap: 7rem 8rem;
 `
 
-export const STitle = styled.h1`
-  color: white;
-  width: 100%;
-  font-weight: 700;
-  font-size: 3rem;
-  flex-shrink: 0;
-  text-align: center;
-`

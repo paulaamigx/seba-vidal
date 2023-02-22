@@ -22,18 +22,6 @@ export const SSlidesContainer= styled.div`
   }
 `
 
-export const SSlide = styled.div`
-  position: relative;
-  aspect-ratio: 2; 
-  width: 100vw;
-  min-width: var(--minWidth);
-  flex-shrink: 0;
-  overflow: none;
-  div{
-    position: absolute;
-  }
-`
-
 export const SFontAwesomeIcon = styled(FontAwesomeIcon)<{dir: 'right'|'left'}>`
   position: absolute;
   top: 50%;

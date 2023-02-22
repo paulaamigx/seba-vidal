@@ -1,6 +1,6 @@
-import { SFontAwesomeIcon, SSlide, SSlidesContainer,
+import { SFontAwesomeIcon, SSlidesContainer,
   SWrapper } from '@/styles/molecules/Gallery'
-import { Slide2,  SlideMain } from '@/components'
+import { Slide, Slide2,  SlideMain } from '@/components'
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { useGalleryScroll } from '@/hooks'
 import { useRef } from 'react'
@@ -24,11 +24,11 @@ const Gallery = () => {
   return(
     <SWrapper id='home'>
       <SSlidesContainer ref={ref}>
-        <SSlide> {Slides[Slides.length-1]} </SSlide>
-        {Slides.map(Slide =>
-          <SSlide> {Slide} </SSlide>
+        <Slide> {Slides[Slides.length-1]} </Slide>
+        {Slides.map(slide =>
+          <Slide> {slide} </Slide>
         )}
-        <SSlide> {Slides[0]} </SSlide>
+        <Slide> {Slides[0]} </Slide>
       </SSlidesContainer>
 
       <SFontAwesomeIcon

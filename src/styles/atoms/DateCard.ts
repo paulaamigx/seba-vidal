@@ -4,7 +4,6 @@ import styled from 'styled-components'
 export const SWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  height: 15rem;
   color: white;
   justify-content: center;
   align-items: center;
@@ -15,6 +14,7 @@ export const SWrapper = styled.div`
 export const SImage = styled(Image)`
   width: 100%;
   aspect-ratio: 1;
+  height: auto;
   border-radius: .4rem;
 `
 export const SName = styled.p`

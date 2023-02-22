@@ -6,10 +6,16 @@ interface Props {
   onClick?: ()=>void
 }
 
+const parseText = (text:string) =>
+  text.toLowerCase()
+    .replace(' ','-')
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+
 const MenuItem = ({text, onClick}:Props) => {
   return(
     <Link
-      href={`#${text.toLowerCase().replace(' ','-')}`}
+      href={`#${parseText(text)}`}
       style={{ textDecoration: 'none' }}>
       <SWrapper onClick={onClick}>
         {text}

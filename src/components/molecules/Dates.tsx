@@ -1,11 +1,11 @@
-import { STitle, SWrapper } from '@/styles/molecules/Dates'
-import DateCard from '../atoms/DateCard'
+import { DateCard, Title } from '@/components'
+import { SWrapper } from '@/styles/molecules/Dates'
 import { UpcomingDates } from '@/data/Dates'
 
 const Dates= () => {
   return(
     <SWrapper id='fechas'>
-      <STitle> Fechas </STitle>
+      <Title text='Fechas'/>
       {UpcomingDates.map(date =>
         <DateCard key={date.name} {...date}/>)}
     </SWrapper>
