@@ -26,4 +26,7 @@ html{
 body{
   margin: auto;
   overflow: scroll;
+  background-color: var(--black);
+  min-height: 100vh;
+  height: fit-content;
 }

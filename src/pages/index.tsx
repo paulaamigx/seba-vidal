@@ -1,4 +1,4 @@
-import { Gallery, Menu, SocialMediaBubble } from '@/components'
+import { Dates, Gallery, Menu, SocialMediaBubble } from '@/components'
 import { Roboto } from '@next/font/google'
 
 const roboto = Roboto({
@@ -10,8 +10,9 @@ export default function Home() {
   return (
     <main className={roboto.className}>
       <Menu/>
-      <Gallery/>
       <SocialMediaBubble/>
+      <Gallery/>
+      <Dates/>
     </main>
   )
 }
