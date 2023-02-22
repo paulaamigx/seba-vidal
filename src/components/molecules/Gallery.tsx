@@ -22,7 +22,7 @@ const Gallery = () => {
 
 
   return(
-    <SWrapper >
+    <SWrapper id='home'>
       <SSlidesContainer ref={ref}>
         <SSlide> {Slides[Slides.length-1]} </SSlide>
         {Slides.map(Slide =>

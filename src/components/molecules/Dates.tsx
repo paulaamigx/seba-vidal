@@ -4,7 +4,7 @@ import { UpcomingDates } from '@/data/Dates'
 
 const Dates= () => {
   return(
-    <SWrapper>
+    <SWrapper id='fechas'>
       <STitle> Fechas </STitle>
       {UpcomingDates.map(date =>
         <DateCard key={date.name} {...date}/>)}

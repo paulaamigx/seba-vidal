@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SWrapper = styled.div`
+export const SWrapper = styled.div<{light: boolean}>`
   display: flex;
   padding: 0 3rem;
   align-items: center;
@@ -14,6 +14,14 @@ export const SWrapper = styled.div`
   min-width: var(--minWidth);
   margin-bottom: -5rem;
   overflow-x: scroll;
+  ${props => `
+    div{
+      color: ${props.light? 'rgba(255,255,255,.2)' : 'black'};
+      &:hover{
+        color: var(--main);
+      }
+    }
+  `}
 `
 
 export const SLogo = styled.p`

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { SWrapper } from '@/styles/atoms/MenuItem'
 
 interface Props {
@@ -7,9 +8,13 @@ interface Props {
 
 const MenuItem = ({text, onClick}:Props) => {
   return(
-    <SWrapper onClick={onClick}>
-      {text}
-    </SWrapper>
+    <Link
+      href={`#${text.toLowerCase().replace(' ','-')}`}
+      style={{ textDecoration: 'none' }}>
+      <SWrapper onClick={onClick}>
+        {text}
+      </SWrapper>
+    </Link>
   )
 }
 
