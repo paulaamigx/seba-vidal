@@ -25,8 +25,8 @@ const Gallery = () => {
     <SWrapper id='home'>
       <SSlidesContainer ref={ref}>
         <Slide> {Slides[Slides.length-1]} </Slide>
-        {Slides.map(slide =>
-          <Slide> {slide} </Slide>
+        {Slides.map((slide,index) =>
+          <Slide key={`slide${index}`}> {slide} </Slide>
         )}
         <Slide> {Slides[0]} </Slide>
       </SSlidesContainer>
