@@ -25,7 +25,7 @@ const Menu= () => {
       <MenuItem text='Home'/>
       <MenuItem text='Fechas'/>
       <MenuItem text='Último Lanzamiento'/>
-      <MenuItem text='Home'/>
+      <MenuItem text='Bio'/>
     </SWrapper>
   )
 }
