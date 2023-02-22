@@ -5,6 +5,7 @@ export {default as Slide2} from './atoms/Slide2'
 export {default as DateCard} from './atoms/DateCard'
 export {default as Title} from './atoms/Title'
 export {default as Slide} from './atoms/Slide'
+export {default as Footer} from './atoms/Footer'
 
 export {default as Menu} from './molecules/Menu'
 export {default as Gallery} from './molecules/Gallery'
