@@ -4,8 +4,8 @@ import { ImageKeyboard } from '@/assets'
 const Slide2 = () => {
   return(
     <SWrapper>
-      <div>Te amo</div>
-      <div>Te amo</div>
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
       <SImage alt='' src={ImageKeyboard}/>
     </SWrapper>
   )

@@ -5,7 +5,7 @@ const SlideMain = () => {
   return(
     <SWrapper>
       <div>
-        Texto sebakan vidal ma lindo
+        Lorem ipsum dolor sit amet
         <SButton>Hace algo!</SButton>
       </div>
       <SImage alt='' src={ImageKeyboardBody}/>

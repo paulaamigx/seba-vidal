@@ -4,7 +4,7 @@ const Footer = () => {
   return(
     <SWrapper>
       <p>®SebaVidal</p>
-      <p>sebakavidal@gmail.com</p>
+      <p>sebavidal@gmail.com</p>
       <p>2023</p>
     </SWrapper>
   )

@@ -6,7 +6,7 @@ const LastRelease = () => {
     <SWrapper id='ultimo-lanzamiento'>
       <Title text='Último Lanzamiento'/>
       <SYouTube
-        videoId="2STgsrSIC0w"/>
+        videoId="ZEWKEwUqxDs"/>
     </SWrapper>
   )
 }
